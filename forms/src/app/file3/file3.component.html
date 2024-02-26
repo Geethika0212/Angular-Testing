@@ -1,0 +1,18 @@
+
+
+<div class="box">
+    <h2 style="color:rgb(9, 77, 80)">Reactive Forms</h2>
+    <p>{{msg}}</p>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" formControlName="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" required>
+
+      <p>Forgot Password?</p>
+      <button type="submit">Login</button>
+      
+    </form>
+  </div>
+  

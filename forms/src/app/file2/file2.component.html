@@ -1,0 +1,38 @@
+<h2>Details:</h2>
+<div class="container">
+ <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let input of Given">
+        <td>{{ input.name }}</td>
+        <td>{{ input.email }}</td>
+        <td>{{ input.contact }}</td><br>
+        
+      </tr>
+    </tbody>
+  </table><br><br>
+</div>
+<div>
+  <form (ngSubmit)="final()">
+    <label for="name">Name:</label>
+    <input id="name" [(ngModel)]="result.name" name="name" required><br><br>
+ 
+    <label for="email">Email:</label>
+    <input id="email" [(ngModel)]="result.email" name="email" type="email" required><br><br>
+ 
+    <label for="contact">Contact:</label>
+    <input id="contact" [(ngModel)]="result.contact" name="contact" type="number" required>
+ 
+    
+ 
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+ 

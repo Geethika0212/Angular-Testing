@@ -1,0 +1,19 @@
+
+
+<div>
+    <h2>Add and Delete Items</h2>
+  
+    <form [formGroup]="itemForm">
+      <label for="Name">Item Name:</label>
+      <input type="text" id="itemName" formControlName="Name" required>
+      <button type="button" (click)="addItem()">Add Name</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let item of items; let i = index">
+        {{ item }}
+        <button type="button" (click)="deleteItem(i)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

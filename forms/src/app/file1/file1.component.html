@@ -1,0 +1,18 @@
+
+
+  <div class="box">
+    <h2 style="color:#3b3b06">Login Details</h2>
+    <form  (ngSubmit)="result()">
+      <div>
+        <label for="firstName">Username:</label>
+        <input type="text" id="firstName" [(ngModel)]="firstName">
+      </div>
+      <div>
+        <label for="lastName">Password:</label>
+        <input type="text" id="lastName" [(ngModel)]="lastName">
+      </div>
+      <p>Forgot Password?</p>
+      <button type="submit">Next</button>
+  
+  </form>
+  </div>
